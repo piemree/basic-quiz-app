@@ -23,6 +23,7 @@ jobs:
       - name: Deploy vue app
         uses: piemree/basic-quiz-app@master
         with:
+          branch: master
           host: ${{secrets.SSH_HOST}}
           key: ${{secrets.SSH_KEY}}
           username: ${{secrets.SSH_USERNAME}}
