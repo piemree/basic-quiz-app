@@ -10,7 +10,7 @@
 <script>
 import OperatorSelector from "./components/OperatorSelector";
 import OperatorQuiz from "./components/OperatorQuiz";
-
+import axios from 'axios'
 export default {
   name: "App",
   data() {
@@ -22,6 +22,7 @@ export default {
     OperatorSelector,
     OperatorQuiz,
   },
+
   methods: {
     changeOperator(operator) {
       this.operator = operator;
@@ -30,6 +31,11 @@ export default {
     clearOperator() {
       this.operator = null;
     },
+  },
+  created() {
+    axios.get("localhost:5000",(res) => {
+      consol.log(res)
+    })
   },
 };
 </script>
