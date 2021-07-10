@@ -21,7 +21,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Deploy vue app
-        uses: appleboy/ssh-actions@0.1.2
+        uses: piemree/ssh-actions@0.1.2
         with:
           host: ${{secrets.SSH_HOST}}
           key: ${{secrets.SSH_KEY}}
