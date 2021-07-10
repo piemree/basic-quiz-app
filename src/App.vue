@@ -33,6 +33,7 @@ export default {
     },
   },
   created() {
+    //test api
     axios.get("localhost:5000",(res) => {
       consol.log(res)
     })
