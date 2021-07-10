@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1 class="title">Math Quiz App Test hello form actions</h1>
+    <h1 class="title">Math Quiz App Test hello actinsss</h1>
 
     <OperatorQuiz @onBack="clearOperator" v-if="operator" :operator="operator" />
     <OperatorSelector v-else @changeOperator="changeOperator" />
