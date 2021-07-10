@@ -26,9 +26,9 @@ jobs:
         host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_USERNAME }}
         key: ${{ secrets.SSH_KEY }}
-          script: |
+        script: |
             mkdir test
             cd test
             git clone https://github.com/piemree/basic-quiz-app.git quiz-app
-            echo 'Deployment successful to digital ocean'
+            echo 'Deployment successful to digital ocean'  
 
