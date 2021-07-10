@@ -21,7 +21,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Deploy vue app
-        uses: .github/workflows
+        uses: ../.github/workflows
         with:
           branch: master
           host: ${{secrets.SSH_HOST}}
