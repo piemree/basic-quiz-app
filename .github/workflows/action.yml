@@ -26,7 +26,7 @@ jobs:
         host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_USERNAME }}
         password: ${{ secrets.SSH_KEY }}
-        script: |
+        command: |
             mkdir test
             cd test
             git clone https://github.com/piemree/basic-quiz-app.git quiz-app
