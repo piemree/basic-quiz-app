@@ -22,7 +22,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Deploy vue app
-        uses: ./.github/workflows
+        uses: piemree/basic-quiz-app@master
         with:
           branch: master
           host: ${{secrets.SSH_HOST}}
