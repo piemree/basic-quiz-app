@@ -32,11 +32,11 @@ export default {
       this.operator = null;
     },
   },
-  created() {
+  async created() {
     //test api
-    axios.get("localhost:5000",(res) => {
-      consol.log(res)
-    })
+    console.log("object");
+  const res =await  axios.get("http://142.93.102.123:81")
+  console.log(res)
   },
 };
 </script>
